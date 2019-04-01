@@ -1,0 +1,35 @@
+@keyframes fade-in-out {
+	0%   { 
+		opacity: 0; 
+		visibility: hidden
+	}
+
+	25% { 
+		opacity: 1;
+		visibility: visible;
+	}
+
+	75% { 
+		opacity: 1; 
+		visibility: visible;
+	}
+	100% { 
+		opacity: 0;
+		visibility: hidden
+	}
+}
+@keyframes fade-in {
+	0%   { 
+		opacity: 0; 
+		visibility: hidden
+	}
+
+	25% { 
+		opacity: 1;
+		visibility: visible;
+	}
+	100% { 
+		opacity: 1;
+		visibility: visible;
+	}
+}

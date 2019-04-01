@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	color: #e4e4ea;
+	text-transform: uppercase;
+
+	h1, h2, h3, h4 {
+		font-weight: 300;
+	}
+	h1{
+		font-size: 1.5em;
+	}
+	h2{
+		font-size: 1em;
+	}
+	#MainContent{
+		background-color: black;
+		display: flex;
+		// background-image: url(/images/nipsey-4.png);
+		// background-size: 50% 100%;
+		// background-position: 100% 0;
+		// background-repeat: no-repeat;
+		height: 100vh;
+
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: .3;
+			position: absolute;
+		}
+
+		.content{
+			width: 50%;
+			height: 100%;
+			// padding: 30px;
+			box-sizing: border-box;
+			position: relative;
+			h1, h2 {
+				text-align: center;
+			}
+
+			.titles, .nipsey{
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				.heading{
+					transform: translate(-50%, 50%);
+					top: 50%;
+					left: 50%;
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+
+			.titles {
+				.heading {
+					position: absolute;
+					-webkit-animation: fade-in-out 3s; /* Safari 4+ */
+  					-moz-animation:    fade-in-out 3s; /* Fx 5+ */
+  					-o-animation:      fade-in-out 3s; /* Opera 12+ */
+					animation:         fade-in-out 3s; /* IE 10+, Fx 29+ */
+					
+					&.hd1{
+						animation-delay: 1s;
+					}
+					&.hd2{
+						animation-delay: 4s;
+					}
+					&.hd3{
+						animation-delay: 7s;
+					}
+				}
+			}
+			.nipsey{
+				letter-spacing: 7px;
+				
+				.heading{
+					position: relative;
+					-webkit-animation: fade-in 3s; /* Safari 4+ */
+					-moz-animation:    fade-in 3s; /* Fx 5+ */
+					-o-animation:      fade-in 3s; /* Opera 12+ */
+					animation:         fade-in 3s; /* IE 10+, Fx 29+ */
+					animation-fill-mode: forwards;
+					
+					&.hd4, &.hd5{
+						animation-delay: 10s;
+					}
+					&.hd5, &.hd6{
+						// animation-delay: 13s;
+					}
+					&.hd5{
+						// top: 56%;
+					}
+					&.flag{
+						top: 63%;
+						width: 24px;
+						border: 1px solid white;
+					}
+				}
+
+				span{
+					font-weight: 500;
+					color: #0149ff;
+					// color: #315883;
+					// background: white;
+					// padding: 0 5px;
+				}
+			}
+		}
+		.image-right{
+			width: 50%;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
